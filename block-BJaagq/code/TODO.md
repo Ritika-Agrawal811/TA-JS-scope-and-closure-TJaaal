@@ -5,10 +5,10 @@ Create a execution context diagram of the following code on your notebook. Take 
 1.
 
 ```js
-var species = 'human';
+var species = "human";
 
 function change() {
-  var species = 'vampire';
+  var species = "vampire";
   console.log(species);
 }
 
@@ -27,7 +27,7 @@ console.log(species); // 2
 2.
 
 ```js
-var topLevelVar = 'This is global scope!';
+var topLevelVar = "This is global scope!";
 
 function topLevelFn() {
   var localVar = "This is local to topLevelFn's scope";
@@ -55,14 +55,14 @@ topLevelFn();
 3.
 
 ```js
-var one = 'One';
-var two = 'Two';
+var one = "One";
+var two = "Two";
 
 function main() {
-  var three = 'Three';
+  var three = "Three";
 
   function inner() {
-    var four = 'Four';
+    var four = "Four";
 
     console.log(one); // 1
     console.log(two); // 2
@@ -82,3 +82,24 @@ console.log(one, two, three, four); // 5
 
 - Create the execution context diagram
 - What will be the value of 1, 2, 3, 4 and 5 or error if the code does not work
+
+<!-- output  -->
+
+1.  'human'
+    'vampire'
+    'human'
+
+2.
+
+"This is local to topLevelFn's scope"
+'This is global scope!'
+
+3.
+
+"ReferenceError: four is not defined
+at main (tinopovere.js:14:40)
+at tinopovere.js:18:1
+at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:13924
+at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:10866"
+
+4.
