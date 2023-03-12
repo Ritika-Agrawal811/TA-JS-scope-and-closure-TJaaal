@@ -13,6 +13,12 @@ let getSum = outer();
 let num = getSum();
 ```
 
+output --
+
+getSum is inner function
+
+num is 30
+
 2.
 
 Create the execution context diagram for following code. Also write the output of the code below.
@@ -34,6 +40,12 @@ counter(); // output
 counter(); // output
 ```
 
+output --
+0
+1
+2
+3
+
 3. Create the execution context diagram
 
 ```js
@@ -43,11 +55,15 @@ function makeColorChanger(color) {
   };
 }
 
-let blue = makeColorChanger('blue');
-let tomato = makeColorChanger('tomato');
+let blue = makeColorChanger("blue");
+let tomato = makeColorChanger("tomato");
 
 blue();
 tomato();
 
 // What will be the background color after the execution of last line
 ```
+
+output --
+
+background color will first be blue then it will be tomato color.
