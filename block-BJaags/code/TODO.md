@@ -15,6 +15,9 @@ let hundred = square(10);
 console.log(hundred);
 ```
 
+output --
+100
+
 Create the execution context diagram of the following code line by line.
 
 ```js
@@ -26,6 +29,10 @@ var five = addFive(0);
 var ten = addFive(5);
 console.log(five, ten);
 ```
+
+output --
+5
+10
 
 Create the execution context diagram of the following code line by line.
 
@@ -42,6 +49,9 @@ function multiplyArrayByN(arr, n) {
 let numbers = multiplyArrayByN(marks);
 ```
 
+output --
+there will be no output but numbers will be [68, 90, 112, 152]
+
 Create the execution context diagram of the following code line by line.
 
 ```js
@@ -55,6 +65,11 @@ function counter(){
 }
 ```
 
+output --
+"SyntaxError: Unexpected identifier 'increment'
+at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:13924
+at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:10866"
+
 Create the execution context diagram of the following code line by line.
 
 ```js
@@ -67,3 +82,7 @@ let counter = function () {
   return increment();
 };
 ```
+
+output --
+
+no error
