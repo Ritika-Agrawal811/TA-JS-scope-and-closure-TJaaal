@@ -6,6 +6,9 @@ var numA = 21,
   numB = 30;
 ```
 
+output --
+NaN
+
 Find the output of the code snippets below:
 
 ```js
@@ -14,6 +17,9 @@ let numA = 21,
   numB = 30;
 ```
 
+output --
+"ReferenceError: Cannot access 'numA' before initialization"
+
 Find the output of the code snippets below:
 
 ```js
@@ -21,6 +27,9 @@ let numA = 21,
   numB = 30;
 console.log(numA + numB); //OUTPUT
 ```
+
+output --
+51
 
 Find the output of the code snippets below:
 
@@ -34,6 +43,10 @@ function sayHello() {
 }
 ```
 
+output --
+"Hello"
+undefined
+
 Find the output of the code snippets below:
 
 ```js
@@ -44,6 +57,9 @@ function sayHello() {
 }
 ```
 
+output --
+"Tyrion"
+
 Find the output of the code snippets below:
 
 ```js
@@ -53,6 +69,9 @@ function sayHello() {
   console.log(username);
 }
 ```
+
+output --
+"ReferenceError: Cannot access 'username' before initialization"
 
 Find the output of the code snippets below:
 
@@ -64,6 +83,9 @@ let sayHello = () => {
 };
 ```
 
+output --
+"ReferenceError: Cannot access 'sayHello' before initialization"
+
 Find the output of the code snippets below:
 
 ```js
@@ -73,6 +95,9 @@ let sayHello = () => {
   console.log(username);
 };
 ```
+
+output --
+"ReferenceError: Cannot access 'sayHello' before initialization"
 
 Find the output of the code snippets below:
 
@@ -84,6 +109,9 @@ let sayHello = () => {
 };
 ```
 
+output --
+"ReferenceError: Cannot access 'sayHello' before initialization"
+
 Find the output of the code snippets below:
 
 ```js
@@ -93,6 +121,9 @@ let sayHello = () => {
   console.log(username);
 };
 ```
+
+output --
+"ReferenceError: Cannot access 'sayHello' before initialization"
 
 Find the output of the code snippets below:
 
@@ -105,6 +136,9 @@ let sayHello = () => {
 sayHello(); // OUTPUT
 ```
 
+output --
+undefined
+
 Find the output of the code snippets below:
 
 ```js
@@ -115,6 +149,9 @@ let sayHello = () => {
 };
 sayHello(); // OUTPUT
 ```
+
+output --
+"John"
 
 Find the output of the code snippets below:
 
@@ -126,3 +163,6 @@ let sayHello = () => {
 };
 sayHello(); // OUTPUT
 ```
+
+output --
+"ReferenceError: Cannot access 'username' before initialization"
