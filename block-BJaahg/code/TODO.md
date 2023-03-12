@@ -5,23 +5,25 @@ Watch this video before doing the exercise: https://www.youtube.com/watch?v=XgSj
 1. Guess the output:
 
 ```js
-let firstName = 'Arya';
-const lastName = 'Stark';
-var knownAs = 'no one';
+let firstName = "Arya";
+const lastName = "Stark";
+var knownAs = "no one";
 
-console.log(
-  window.firstName,
-  window.lastName,
-  window.knownAs
-);
+console.log(window.firstName, window.lastName, window.knownAs);
 ```
+
+output --
+
+"Arya"
+"Stark"
+"no one"
 
 2. Guess the output:
 
 ```js
-let firstName = 'Arya';
-const lastName = 'Stark';
-var knownAs = 'no one';
+let firstName = "Arya";
+const lastName = "Stark";
+var knownAs = "no one";
 
 function fullName(a, b) {
   return a + b;
@@ -29,6 +31,9 @@ function fullName(a, b) {
 
 console.log(window.fullName(firstName, lastName));
 ```
+
+output --
+"AryaStark"
 
 3. Make a Execution Context Diagram for the following JS and write the output.
 
@@ -41,6 +46,10 @@ var two = addOne(1);
 console.log(one, two);
 ```
 
+output --
+1
+2
+
 4. Make a Execution Context Diagram for the following JS and write the output.
 
 ```js
@@ -51,6 +60,10 @@ fucntion addOne(num){
 var two = addOne(1);
 console.log(one, two);
 ```
+
+output --
+1
+2
 
 5. Make a Execution Context Diagram for the following JS and write the output.
 
@@ -63,6 +76,10 @@ var two = addOne(1);
 console.log(two);
 ```
 
+output --
+1
+2
+
 6. Make a Execution Context Diagram for the following JS and write the output.
 
 ```js
@@ -74,6 +91,9 @@ var two = addOne(1);
 console.log(two);
 ```
 
+output --
+"ReferenceError: Cannot access 'addOne' before initialization"
+
 7. Make a Execution Context Diagram for the following JS and write the output.
 
 ```js
@@ -84,6 +104,9 @@ const addOne = (num) => {
 var two = addOne(1);
 console.log(two);
 ```
+
+output --
+"ReferenceError: Cannot access 'addOne' before initialization"
 
 8. What will be the output of the following
 
@@ -98,6 +121,9 @@ function isAwesome() {
 isAwesome();
 ```
 
+output --
+undefined
+
 9. What will be the output of the following
 
 ```js
@@ -110,6 +136,9 @@ function isAwesome() {
 }
 isAwesome();
 ```
+
+output --
+true
 
 10. What will be the output of the following
 
@@ -124,12 +153,15 @@ function isAwesome() {
 isAwesome();
 ```
 
+output --
+undefined
+
 11. What will be the output of the following
 
 ```js
-let firstName = 'Arya';
-const lastName = 'Stark';
-var knownAs = 'no one';
+let firstName = "Arya";
+const lastName = "Stark";
+var knownAs = "no one";
 
 function fullName(a, b) {
   return a + b;
@@ -138,34 +170,46 @@ const name = fullName(firstName, lastName);
 console.log(name);
 ```
 
+output --
+"AryaStark"
+
 12. Guess the output of the code below with a reason.
 
 ```js
 function sayHello() {
-  let name = 'Arya Stark';
+  let name = "Arya Stark";
 }
 sayHello();
 
 console.log(name);
 ```
 
+output --
+"ReferenceError: 'name' is not defined"
+
 13. Guess the output of the code below with a reason.
 
 ```js
 if (true) {
-  var name = 'Arya Stark';
+  var name = "Arya Stark";
 }
 console.log(name);
 ```
+
+output --
+"Arya Stark"
 
 14. Guess the output of the code below with a reason.
 
 ```js
 if (true) {
-  let name = 'Arya Stark';
+  let name = "Arya Stark";
 }
 console.log(name);
 ```
+
+output --
+"ReferenceError: 'name' is not defined"
 
 15. Guess the output of the code below with a reason.
 
@@ -176,6 +220,9 @@ for (var i = 0; i < 20; i++) {
 console.log(i);
 ```
 
+output --
+20
+
 16. Guess the output of the code below with a reason.
 
 ```js
@@ -185,57 +232,76 @@ for (let i = 0; i < 20; i++) {
 console.log(i);
 ```
 
+"ReferenceError: 'i' is not defined"
+
 17. Guess the output and the reason behind that.
 
 ```js
 function sample() {
   if (true) {
-    var username = 'John Snow';
+    var username = "John Snow";
   }
   console.log(username);
 }
 sample();
 ```
+
+output --
+"John Snow"
 
 18. Guess the output and the reason behind that.
 
 ```js
 function sample() {
   if (true) {
-    let username = 'John Snow';
+    let username = "John Snow";
   }
   console.log(username);
 }
 sample();
 ```
 
+output --
+"ReferenceError: username is not defined"
+
 19. Guess the output and the reason behind that.
 
 ```js
 function sample() {
-  var username = 'Arya Stark';
+  var username = "Arya Stark";
   if (true) {
-    var username = 'John Snow';
+    var username = "John Snow";
     console.log(username);
   }
-  console.log(username, 'second');
+  console.log(username, "second");
 }
 sample();
 ```
+
+output --
+"John Snow"
+"John Snow"
+"second"
 
 20. Guess the output and the reason behind that.
 
 ```js
 function sample() {
-  let username = 'Arya Stark';
+  let username = "Arya Stark";
   if (true) {
-    let username = 'John Snow';
-    console.log(username, 'first');
+    let username = "John Snow";
+    console.log(username, "first");
   }
-  console.log(username, 'second');
+  console.log(username, "second");
 }
 sample();
 ```
+
+output --
+"John Snow"
+"first"
+"Arya Stark"
+"second"
 
 21. Guess the output and the reason behind that.
 
@@ -247,8 +313,13 @@ function sample(...args) {
   }
 }
 
-sample('First', 'Second', 'Third');
+sample("First", "Second", "Third");
 ```
+
+output --
+"Hello I am First"
+"Hello I am Second"
+"Hello I am Third"
 
 22. Guess the output and the reason behind that.
 
@@ -260,48 +331,55 @@ function sample(...args) {
   }
 }
 
-sample('First', 'Second', 'Third');
+sample("First", "Second", "Third");
 ```
+
+output --
+"Hello I am First"
+"Hello I am Second"
+"Hello I am Third"
 
 23. Guess the output and the reason behind that.
 
 ```js
 if (true) {
   const myFunc = function () {
-    console.log(username, 'Second');
+    console.log(username, "Second");
   };
-  console.log(username, 'First');
-  let username = 'Hello World!';
+  console.log(username, "First");
+  let username = "Hello World!";
   myFunc();
 }
 ```
+
+output --
+"ReferenceError: Cannot access 'username' before initialization"
 
 24. Guess the output and the reason behind that.
 
 ```js
 function outer() {
-  let movie = 'Mad Max: Fury Road';
+  let movie = "Mad Max: Fury Road";
   function inner() {
-    console.log(
-      `I love this movie called ${movie.toUpperCase()}`
-    );
+    console.log(`I love this movie called ${movie.toUpperCase()}`);
   }
   inner();
 }
 
 outer();
 ```
+
+output --
+"I love this movie called MAD MAX: FURY ROAD"
 
 25. Guess the output and the reason behind that.
 
 ```js
 function outer() {
-  let movie = 'Mad Max: Fury Road';
+  let movie = "Mad Max: Fury Road";
   function inner() {
-    let movie = 'Before Sunrise';
-    console.log(
-      `I love this movie called ${movie.toUpperCase()}`
-    );
+    let movie = "Before Sunrise";
+    console.log(`I love this movie called ${movie.toUpperCase()}`);
   }
   inner();
 }
@@ -309,18 +387,19 @@ function outer() {
 outer();
 ```
 
+output --
+"I love this movie called BEFORE SUNRISE"
+
 26. Guess the output and the reason behind that.
 
 ```js
 function outer() {
-  let movie = 'Mad Max: Fury Road';
+  let movie = "Mad Max: Fury Road";
   function inner() {
-    let movie = 'Before Sunrise';
+    let movie = "Before Sunrise";
     function extraInner() {
-      let movie = 'Gone Girl';
-      console.log(
-        `I love this movie called ${movie.toUpperCase()}`
-      );
+      let movie = "Gone Girl";
+      console.log(`I love this movie called ${movie.toUpperCase()}`);
     }
     extraInner();
   }
@@ -328,6 +407,9 @@ function outer() {
 }
 outer();
 ```
+
+output --
+"I love this movie called GONE GIRL"
 
 30. Using reduce find the final value when the initial value passed is `100`. You have to pass the output of one function into the input of next function in the array `allFunctions` starts with `addOne` ends with `half`.
 
@@ -345,14 +427,11 @@ const half = (num) => {
   return num / 2;
 };
 
-let allFunctions = [
-  addOne,
-  subTwo,
-  multiplyThree,
-  addOne,
-  multiplyThree,
-  half,
-];
+let allFunctions = [addOne, subTwo, multiplyThree, addOne, multiplyThree, half];
 
 // Answer is: 447
 ```
+
+let result = allFunctions.reduce((answer, elem) => elem(answer), 100);
+
+console.log(result);
